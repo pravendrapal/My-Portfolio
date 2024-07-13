@@ -1,0 +1,399 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000814;
+    color: #EEEEEE;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+
+header {
+    /* background-color: #0d1321; */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* nav ul div li {
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+} */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    height: 300px;
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #001524;
+    display: flex;
+    align-items: center;
+}
+
+#hero h2 {
+    font-size: 40px;
+}
+
+/* About section */
+#about {
+    /* background-color: #1d2d44; */
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+/* Profile Picture */
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /*Adding a subtle shadow */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Hover Effect */
+.profile-picture:hover {
+    transform: scale(1.1);
+    border: 2px solid #000814;
+    box-shadow: 0 0 30px rgba(255,255,255,0.5);    
+}
+
+
+/* About Text */
+.about-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+/* Portfolio section */
+#portfolio {
+    /* background-color: #3e5c76; */
+    padding-top: 50px;
+}
+
+ /* contact section */
+ #contact {
+    /* background-color: #748cab; */
+    padding-top: 0px;
+    /* padding-bottom: 50px; */
+ }
+
+.contact-icons {
+    text-align: center;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+.contact-icon:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Individual Icon Styles */
+.contact-icon.whatsapp:hover {
+    background-color: #25D366;
+    color: #fff;
+}
+
+.contact-icon.linkedin:hover {
+    background-color: #0077B5;
+    color: #fff;
+
+}
+
+.contact-icon.instagram:hover {
+    background-color: #E4405F;
+    color: #fff;
+}
+
+.contact-icon.facebook:hover {
+    background-color: #1877F2;
+    color: #fff;
+}
+
+.contact-icon.github:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-icon.gmail:hover {
+    background-color: #BB001B;
+    color: #fff;
+}
+
+/* Contact Form */
+.contact-form {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    /* background-color: #f0ebd8; */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.37);
+
+}
+
+input {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+textarea {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /*Wrap items to the next line if needed */
+}
+
+.about-box {
+    flex: 1 1 300px; /*Flex-grow, flex-shrink, flex-basis*/
+    padding: 20px;
+    /* background-color: #f2f2f2; */
+    border-radius: 10px;
+    margin: 20px 10px 20px; /* Added bottom margin for spacing */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    /* background-color: gray; */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.37);
+}
+
+.about-box h3 {
+    /* color: #333; */
+    margin-bottom: 10px;
+}
+
+.about-box h4 {
+    color: #1877F2;
+}
+
+.about-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-box ul li {
+    /* color: #555; */
+    color: #1877F2;
+    margin-bottom: 5px;
+}
+
+.about-box p {
+    /* color: #555; */
+    margin: 0;
+}
+
+.toggle-button {
+    display: block;
+    margin-top: 10px; /* Added top margin for spacing */
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Portfolio Section */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.portfolio-item {
+    position: relative;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width of portfolio items */
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+/* nav ul li:hover {
+    
+} */
