@@ -32,6 +32,14 @@ nav ul {
 nav ul div {
     display: inline-block;
     margin-right: 20px;
+    padding: 10px;
+    /* border: 2px solid #EEEEEE; */
+
+}
+
+nav ul div:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.37);
 }
 
 /* nav ul div li {
@@ -44,9 +52,9 @@ nav ul li a {
     color: #fff;
 }
 
-nav ul li a:hover {
+/* nav ul li a:hover {
     text-decoration: underline;
-}
+} */
 
 section {
     padding: 100px 0;
@@ -105,6 +113,7 @@ h1, h2 {
     height: auto;
     border-radius: 50%;
     display: block;
+    transition: transform 0.3s ease;
 }
 
 /* Hover Effect */
@@ -260,11 +269,17 @@ textarea {
 /* About Section */
 .about-content {
     display: flex;
-    flex-wrap: wrap; /*Wrap items to the next line if needed */
+    flex-direction: column;
+    /*flex-wrap: wrap; Wrap items to the next line if needed */
+}
+
+.toggles {
+    display: flex;
+    justify-content: center;
 }
 
 .about-box {
-    flex: 1 1 300px; /*Flex-grow, flex-shrink, flex-basis*/
+    /* flex: 1 1 300px; Flex-grow, flex-shrink, flex-basis */
     padding: 20px;
     /* background-color: #f2f2f2; */
     border-radius: 10px;
@@ -306,20 +321,25 @@ textarea {
 }
 
 .toggle-button {
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
     display: block;
     margin-top: 10px; /* Added top margin for spacing */
+    margin-left: 10px;
     padding: 10px 20px;
     background-color: #ccc;
-    color: #fff;
+    color: #000814;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.toggle-button:hover {
+/* .toggle-button:hover {
     background-color: #0056b3;
-}
+} */
 
 
 

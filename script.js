@@ -1,46 +1,47 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Smooth scrolling
-//     const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
-    
-//     for (const smoothScrollLink of smoothScrollLinks) {
-//         smoothScrollLink.addEventListener('click', function(event) {
-//             event.preventDefault();
-//             const targetId = this.getAttribute('href').substring(1);
-//             const targetElement = document.getElementById(targetId);
-//             if (targetElement) {
-//                 const targetPosition = targetElement.offsetTop;
-//                 window.scrollTo({
-//                     top: targetPosition,
-//                     behavior: 'smooth'
-//                 });
-//             }
-//         });
-//     }
-// });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const experienceBox = document.querySelector('.experience-box');
-    const educationBox = document.querySelector('.education-box');
+const skills = document.getElementById('skills');
+const experience = document.getElementById('experience');
+const education = document.getElementById('education');
+const skillToggle = document.getElementById('toggle-about');
+const experienceToggle = document.getElementById('toggle-experience');
+const educationToggle = document.getElementById('toggle-education');
 
-    // Hide experience and education boxes by default
-    experienceBox.style.display = 'none';
-    educationBox.style.display = 'none';
 
-    // Toggle visibility of experience box
-    document.getElementById('toggle-experience').addEventListener('click', function() {
-        if (experienceBox.style.display === 'none') {
-            experienceBox.style.display = 'block';
-        } else {
-            experienceBox.style.display = 'none';
-        }
-    });
+skillToggle.addEventListener('click',function(){
 
-    // Toggle visibility of education box
-    document.getElementById('toggle-education').addEventListener('click', function() {
-        if (educationBox.style.display === 'none') {
-            educationBox.style.display = 'block';
-        } else {
-            educationBox.style.display = 'none';
-        }
-    });
-});
+    skills.style.display = null;
+    experience.style.display = 'none';
+    education.style.display = 'none';
+    skillToggle.style.backgroundColor = '#0056b3'
+    experienceToggle.style.backgroundColor = null
+    educationToggle.style.backgroundColor = null
+    skillToggle.style.color = '#EEEEEE';
+    experienceToggle.style.color = null;
+    educationToggle.style.color = null;
+})
+
+experienceToggle.addEventListener('click',function(){
+
+    skills.style.display = 'none';
+    experience.style.display = null;
+    education.style.display = 'none';
+    skillToggle.style.backgroundColor = null;
+    experienceToggle.style.backgroundColor = '#0056b3';
+    educationToggle.style.backgroundColor = null;
+    skillToggle.style.color = null;
+    experienceToggle.style.color = '#EEEEEE';
+    educationToggle.style.color = null;
+})
+
+educationToggle.addEventListener('click',function(){
+
+    skills.style.display = 'none';
+    experience.style.display = 'none';
+    education.style.display = null;
+    skillToggle.style.backgroundColor = null;
+    experienceToggle.style.backgroundColor = null;
+    educationToggle.style.backgroundColor = '#0056b3';
+    skillToggle.style.color = null;
+    experienceToggle.style.color = null;
+    educationToggle.style.color = '#EEEEEE';
+})
