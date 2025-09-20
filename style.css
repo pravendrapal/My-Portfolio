@@ -104,8 +104,8 @@ h1, h2 {
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto 20px;
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /*Adding a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); Adding a subtle shadow */
 }
 
 .profile-picture img {
@@ -119,8 +119,8 @@ h1, h2 {
 /* Hover Effect */
 .profile-picture:hover {
     transform: scale(1.1);
-    border: 2px solid #000814;
-    box-shadow: 0 0 30px rgba(255,255,255,0.5);    
+    /* border: 2px solid #000814; */
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);    
 }
 
 
